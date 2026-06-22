@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>АктивТур — Спортивный туризм нового уровня</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <base target="_blank">
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="site-header">
+  <div class="header-inner">
+    <a href="#" class="logo"><span class="ak">Актив</span><span class="tur">Тур</span></a>
+    <nav>
+      <button data-scroll="#directions">Направления</button>
+      <button data-scroll="#how-it-works">Как это работает</button>
+      <button data-scroll="#tours">Туры</button>
+      <button data-scroll="#reviews">Отзывы</button>
+      <button data-scroll="#faq">FAQ</button>
+    </nav>
+    <button class="header-book" data-scroll="#tours">Забронировать</button>
+    <button class="burger" id="burgerBtn" aria-label="Меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg active" id="hbg0">
+    <img src="images/background_1.jpg" alt="">
+  </div>
+  <div class="hero-bg" id="hbg1">
+    <img src="images/background_2.jpg" alt="">
+  </div>
+  <div class="hero-bg" id="hbg2">
+    <img src="images/background_3.jpg" alt="">
+  </div>
+  <div class="hero-ov1"></div>
+  <div class="hero-ov2"></div>
+  <div class="hero-blur"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Спортивный туризм нового уровня</div>
+    <h1 class="hero-title">
+      <span class="line hl" id="hline0">Путешествуй.</span>
+      <span class="line" id="hline1">Тренируйся.</span>
+      <span class="line" id="hline2">Побеждай.</span>
+    </h1>
+    <p class="hero-sub">Спортивные путешествия для тех, кто <strong>не сидит на месте.</strong></p>
+    <button class="btn-primary" data-scroll="#tours">
+      Смотреть туры
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3.33 8H12.67"/><path d="M8 3.33L12.67 8L8 12.67"/>
+      </svg>
+    </button>
+  </div>
+  <div class="hero-dots">
+    <button class="hero-dot active" data-hi="0"></button>
+    <button class="hero-dot" data-hi="1"></button>
+    <button class="hero-dot" data-hi="2"></button>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat"><div class="stat-val">500+</div><div class="stat-lbl">Туров</div></div>
+      <div class="stat"><div class="stat-val">50+</div><div class="stat-lbl">Стран</div></div>
+      <div class="stat"><div class="stat-val">10 000+</div><div class="stat-lbl">Спортсменов</div></div>
+      <div class="stat"><div class="stat-val">4.9</div><div class="stat-lbl">Рейтинг</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- DIRECTIONS -->
+<section id="directions" style="background:white;padding:5rem 0">
+  <div class="container">
+    <p class="section-tag" style="margin-bottom:12px">Что мы предлагаем</p>
+    <h2 class="section-title">Наши <span class="accent">направления</span></h2>
+    <p class="dir-sub">Шесть дисциплин, пятьдесят стран, одна страсть — помогать атлетам выступать на пике возможностей в любой точке мира.</p>
+    <div class="sport-grid">
+      <div class="sport-card"><div class="sport-bg"></div><img src="images/alpy.jpg" alt="Горные лыжи и сноуборд"><div class="sport-ov"></div><div class="sport-txt"><div class="sport-name">Горные лыжи и сноуборд</div><div class="sport-loc"><svg viewBox="0 0 12 12" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.2" stroke-linecap="round"><path d="M6.3 10.9C7.23 10.1 10 7.5 10 5A4 4 0 1 0 2 5c0 2.5 2.77 5.1 3.7 5.9a1 1 0 0 0 1.3 0Z"/><circle cx="6" cy="5" r="1.5"/></svg>Альпы, Австрия</div></div></div>
+      <div class="sport-card"><div class="sport-bg"></div><img src="images/serfing.jpg" alt="Серфинг и SUP"><div class="sport-ov"></div><div class="sport-txt"><div class="sport-name">Серфинг и SUP</div><div class="sport-loc"><svg viewBox="0 0 12 12" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.2" stroke-linecap="round"><path d="M6.3 10.9C7.23 10.1 10 7.5 10 5A4 4 0 1 0 2 5c0 2.5 2.77 5.1 3.7 5.9a1 1 0 0 0 1.3 0Z"/><circle cx="6" cy="5" r="1.5"/></svg>Бали, Индонезия</div></div></div>
+      <div class="sport-card"><div class="sport-bg"></div><img src="images/bike.jpg" alt="Велоспорт"><div class="sport-ov"></div><div class="sport-txt"><div class="sport-name">Велоспорт</div><div class="sport-loc"><svg viewBox="0 0 12 12" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.2" stroke-linecap="round"><path d="M6.3 10.9C7.23 10.1 10 7.5 10 5A4 4 0 1 0 2 5c0 2.5 2.77 5.1 3.7 5.9a1 1 0 0 0 1.3 0Z"/><circle cx="6" cy="5" r="1.5"/></svg>Майорка, Испания</div></div></div>
+      <div class="sport-card"><div class="sport-bg"></div><img src="images/running.jpg" alt="Трейлраннинг"><div class="sport-ov"></div><div class="sport-txt"><div class="sport-name">Трейлраннинг</div><div class="sport-loc"><svg viewBox="0 0 12 12" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.2" stroke-linecap="round"><path d="M6.3 10.9C7.23 10.1 10 7.5 10 5A4 4 0 1 0 2 5c0 2.5 2.77 5.1 3.7 5.9a1 1 0 0 0 1.3 0Z"/><circle cx="6" cy="5" r="1.5"/></svg>Доломиты, Италия</div></div></div>
+      <div class="sport-card"><div class="sport-bg"></div><img src="images/diving.jpg" alt="Дайвинг"><div class="sport-ov"></div><div class="sport-txt"><div class="sport-name">Дайвинг</div><div class="sport-loc"><svg viewBox="0 0 12 12" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.2" stroke-linecap="round"><path d="M6.3 10.9C7.23 10.1 10 7.5 10 5A4 4 0 1 0 2 5c0 2.5 2.77 5.1 3.7 5.9a1 1 0 0 0 1.3 0Z"/><circle cx="6" cy="5" r="1.5"/></svg>Мальдивы</div></div></div>
+      <div class="sport-card"><div class="sport-bg"></div><img src="images/skalolaz.jpg" alt="Скалолазание"><div class="sport-ov"></div><div class="sport-txt"><div class="sport-name">Скалолазание</div><div class="sport-loc"><svg viewBox="0 0 12 12" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.2" stroke-linecap="round"><path d="M6.3 10.9C7.23 10.1 10 7.5 10 5A4 4 0 1 0 2 5c0 2.5 2.77 5.1 3.7 5.9a1 1 0 0 0 1.3 0Z"/><circle cx="6" cy="5" r="1.5"/></svg>Калимнос, Греция</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how-it-works">
+  <div class="container">
+    <p class="section-tag" style="display:block;text-align:center;margin-bottom:12px">Просто и прозрачно</p>
+    <h2 class="section-title" style="text-align:center;letter-spacing:-1.2px">Как это работает</h2>
+    <div class="steps">
+      <div>
+        <div class="step-icon-row">
+          <div class="step-ico">
+            <img src="icons/Icon_planet.svg" alt="" width="20" height="20">
+          </div>
+          <span class="step-num">01</span>
+        </div>
+        <h3 class="step-title">Выбираешь спорт</h3>
+        <p class="step-desc">Просматриваешь коллекцию направлений. Фильтруешь по виду спорта, сложности, длительности и бюджету.</p>
+      </div>
+      <div>
+        <div class="step-icon-row">
+          <div class="step-ico">
+            <img src="icons/Icon_notebook.svg" alt="" width="20" height="20">
+          </div>
+          <span class="step-num">02</span>
+        </div>
+        <h3 class="step-title">Мы всё организуем</h3>
+        <p class="step-desc">Наша команда берёт на себя перелёты, жильё, аренду снаряжения, местных гидов и всю логистику.</p>
+      </div>
+      <div>
+        <div class="step-icon-row">
+          <div class="step-ico">
+            <img src="icons/Icon_win.svg" alt="" width="20" height="20">
+          </div>
+          <span class="step-num">03</span>
+        </div>
+        <h3 class="step-title">Ты тренируешься и отдыхаешь</h3>
+        <p class="step-desc">Занимаешься с тренерами, покоряешь культовые маршруты, знакомишься с атлетами со всего мира.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOURS -->
+<section id="tours">
+  <div class="container">
+    <div class="tours-head">
+      <div>
+        <p class="section-tag" style="display:block;margin-bottom:12px">Лучшие программы</p>
+        <h2 class="section-title">Популярные туры</h2>
+      </div>
+      <div class="nav-arrows">
+        <button class="nav-arr" id="tourPrev">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#62748e" stroke-width="1.67" stroke-linecap="round"><path d="M12.5 15L7.5 10L12.5 5"/></svg>
+        </button>
+        <button class="nav-arr" id="tourNext">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#62748e" stroke-width="1.67" stroke-linecap="round"><path d="M7.5 15L12.5 10L7.5 5"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="tours-grid" id="toursGrid"></div>
+    <div class="page-dots" id="pageDots"></div>
+    <div class="tour-detail">
+      <div class="td-head">
+        <div>
+          <div class="td-name" id="tdName"></div>
+          <div class="td-loc">
+            <svg viewBox="0 0 12 12" fill="none" stroke="#90a1b9" stroke-width="1.2" stroke-linecap="round" width="12" height="12"><path d="M6.3 10.9C7.23 10.1 10 7.5 10 5A4 4 0 1 0 2 5c0 2.5 2.77 5.1 3.7 5.9a1 1 0 0 0 1.3 0Z"/><circle cx="6" cy="5" r="1.5"/></svg>
+            <span id="tdLoc"></span>
+          </div>
+        </div>
+        <button class="btn-close" id="tdClose">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.67" stroke-linecap="round"><path d="M15 5L5 15M5 5L15 15"/></svg>
+        </button>
+      </div>
+      <p class="td-desc" id="tdDesc"></p>
+      <div class="td-chips">
+        <div class="td-chip">
+          <svg viewBox="0 0 14 14" fill="none" stroke="#6cc6ec" stroke-width="1.17" stroke-linecap="round" width="14" height="14"><rect x="1.75" y="2.33" width="10.5" height="10.5" rx=".83"/><path d="M4.67 1.17V3.5M9.33 1.17V3.5M1.75 5.83H12.25"/></svg>
+          <span id="tdDate"></span>
+        </div>
+        <div class="td-chip">
+          <svg viewBox="0 0 14 14" fill="none" stroke="#6cc6ec" stroke-width="1.17" stroke-linecap="round" width="14" height="14"><circle cx="7" cy="7" r="5.83"/><path d="M7 3.5V7l2.33 1.17"/></svg>
+          <span id="tdDur"></span>
+        </div>
+        <div class="td-chip">
+          <svg viewBox="0 0 14 14" fill="none" stroke="#6cc6ec" stroke-width="1.17" stroke-linecap="round" width="14" height="14"><path d="M9.33 12.25v-1.17a2.33 2.33 0 0 0-2.33-2.33H3.5a2.33 2.33 0 0 0-2.33 2.33v1.17"/><circle cx="5.25" cy="4.08" r="2.33"/><path d="M12.83 12.25v-1.17a2.33 2.33 0 0 0-1.75-2.26M9.33 1.83a2.33 2.33 0 0 1 0 4.51"/></svg>
+          <span id="tdGroup"></span>
+        </div>
+        <div class="td-chip">
+          <span style="font-size:12px;color:#90a1b9">от</span>
+          <span id="tdPrice" style="font-size:14px;font-weight:900;color:#1d293d"></span>
+        </div>
+      </div>
+      <button class="btn-book" id="tdBook">Забронировать тур</button>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO STRIP -->
+<section class="photo-strip">
+  <img src="images/bg_3.jpg" alt="">
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="rev-inner container">
+    <div class="rev-head">
+      <p class="section-tag" style="margin-bottom:12px">опыт, которым хочется поделиться</p>
+      <h2 class="section-title" style="letter-spacing:-1.2px">Путешественники рекомендуют</h2>
+    </div>
+    <div class="rev-grid">
+      <div class="rev-card">
+        <div class="stars">
+          <img src="icons/icon_star.svg" alt="" width="16" height="16" class="icon-gold">
+          <img src="icons/icon_star.svg" alt="" width="16" height="16" class="icon-gold">
+          <img src="icons/icon_star.svg" alt="" width="16" height="16" class="icon-gold">
+          <img src="icons/icon_star.svg" alt="" width="16" height="16" class="icon-gold">
+          <img src="icons/icon_star.svg" alt="" width="16" height="16" class="icon-gold">
+        </div>
+        <p class="rev-text">"Кемп в Доломитах изменил мой подход к бегу. АктивТур взял на себя каждую деталь — мне оставалось только бежать. Лучшая неделя в жизни."</p>
+        <div class="rev-author"><div class="av">СА</div><div><div class="av-name">София Андреева</div><div class="av-sport">Трейлраннинг</div></div></div>
+      </div>
+      <div class="rev-card">
+        <div class="stars">
+          <img src="icons/icon_star.svg" alt="" width="16" height="16" class="icon-gold">
+          <img src="icons/icon_star.svg" alt="" width="16" height="16" class="icon-gold">
+          <img src="icons/icon_star.svg" alt="" width="16" height="16" class="icon-gold">
+          <img src="icons/icon_star.svg" alt="" width="16" height="16" class="icon-gold">
+          <img src="icons/icon_star.svg" alt="" width="16" height="16" class="icon-gold">
+        </div>
+        <p class="rev-text">"Майорка с АктивТур — это мечта. Профессиональный тренинг, идеальные маршруты и атмосфера, которая заряжает на весь год. Уже планирую второй раз."</p>
+        <div class="rev-author"><div class="av">МВ</div><div><div class="av-name">Максим Виноградов</div><div class="av-sport">Велоспорт</div></div></div>
+      </div>
+      <div class="rev-card">
+        <div class="stars">
+          <img src="icons/icon_star.svg" alt="" width="16" height="16" class="icon-gold">
+          <img src="icons/icon_star.svg" alt="" width="16" height="16" class="icon-gold">
+          <img src="icons/icon_star.svg" alt="" width="16" height="16" class="icon-gold">
+          <img src="icons/icon_star.svg" alt="" width="16" height="16" class="icon-gold">
+          <img src="icons/icon_star.svg" alt="" width="16" height="16" class="icon-gold">
+        </div>
+        <p class="rev-text">"Калимнос превзошёл все ожидания. Гиды мирового класса, безупречная логистика. Уже забронировал следующий тур с этой командой."</p>
+        <div class="rev-author"><div class="av">ДР</div><div><div class="av-name">Дмитрий Романов</div><div class="av-sport">Скалолазание</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <p class="section-tag" style="display:block;text-align:center;margin-bottom:12px">Живые впечатления</p>
+    <h2 class="section-title" style="text-align:center">Галерея приключений</h2>
+    <div class="gallery-wrap">
+      <div class="g-item active" data-gi="0">
+        <img src="images/gallery_1.jpg" alt="Изображение 1">
+      </div>
+      <div class="g-item" data-gi="1">
+        <img src="images/gallery_2.jpg" alt="Изображение 2">
+      </div>
+      <div class="g-item" data-gi="2">
+        <img src="images/gallery_3.jpg" alt="Изображение 3">
+      </div>
+      <div class="g-item" data-gi="3">
+        <img src="images/gallery_4.jpg" alt="Изображение 4">
+      </div>
+      <div class="g-item" data-gi="4">
+        <img src="images/gallery_5.jpg" alt="Изображение 5">
+      </div>
+    </div>
+    <div class="g-dots" id="galleryDots"></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="faq-bg">
+    <img src="images/bg.png" alt="">
+  </div>
+  <div class="faq-ov"></div>
+  <div class="faq-inner container">
+    <p class="section-tag" style="display:block;margin-bottom:12px">Есть вопросы?</p>
+    <h2 class="section-title" style="letter-spacing:-1.2px">Часто задаваемые вопросы</h2>
+    <div class="accordion">
+      <div class="acc-item open">
+        <button class="acc-btn"><span class="acc-q">Какое снаряжение нужно брать с собой?</span><span class="acc-ico"><svg viewBox="0 0 20 20" fill="none" stroke="#6cc6ec" stroke-width="1.67" stroke-linecap="round"><path d="M5 7.5L10 12.5L15 7.5"/></svg></span></button>
+        <div class="acc-ans"><p>Базовое снаряжение (трекинговые ботинки, спортивная одежда) нужно своё. Специализированное оборудование — лыжи, доски для сёрфа, велосипеды, страховочное снаряжение — входит в стоимость тура или доступно в аренду на месте.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-btn"><span class="acc-q">Какой уровень физической подготовки требуется?</span><span class="acc-ico"><svg viewBox="0 0 20 20" fill="none" stroke="#6cc6ec" stroke-width="1.67" stroke-linecap="round"><path d="M5 7.5L10 12.5L15 7.5"/></svg></span></button>
+        <div class="acc-ans"><p>Каждый тур имеет метку сложности: Лёгкий, Средний или Эксперт. Для большинства туров достаточно общей физической формы. Если сомневаетесь — напишите нам, мы подберём подходящий маршрут.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-btn"><span class="acc-q">Включено ли страхование в стоимость тура?</span><span class="acc-ico"><svg viewBox="0 0 20 20" fill="none" stroke="#6cc6ec" stroke-width="1.67" stroke-linecap="round"><path d="M5 7.5L10 12.5L15 7.5"/></svg></span></button>
+        <div class="acc-ans"><p>Базовая страховка путешественника включена во все туры. Для экстремальных видов спорта рекомендуем оформить расширенную страховку — мы поможем подобрать вариант.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-btn"><span class="acc-q">Каковы условия отмены бронирования?</span><span class="acc-ico"><svg viewBox="0 0 20 20" fill="none" stroke="#6cc6ec" stroke-width="1.67" stroke-linecap="round"><path d="M5 7.5L10 12.5L15 7.5"/></svg></span></button>
+        <div class="acc-ans"><p>При отмене за 30+ дней — полный возврат. За 15–29 дней — 70%. За 7–14 дней — 40%. Менее чем за 7 дней — возврат не предусмотрен.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-btn"><span class="acc-q">Из кого состоят группы?</span><span class="acc-ico"><svg viewBox="0 0 20 20" fill="none" stroke="#6cc6ec" stroke-width="1.67" stroke-linecap="round"><path d="M5 7.5L10 12.5L15 7.5"/></svg></span></button>
+        <div class="acc-ans"><p>Группы формируются из участников со схожим уровнем подготовки, от 6 до 12 человек. Это позволяет тренерам уделить максимум внимания каждому.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section id="newsletter">
+  <div class="container">
+    <div class="nl-box">
+      <div class="nl-icon">
+        <img src="icons/letter.svg" alt="Письмо" width="48" height="48">
+      </div>
+      <h2 class="nl-title">Не пропусти новые приключения</h2>
+      <p class="nl-sub">Ранние предложения, новые направления и истории атлетов — прямо на почту.</p>
+      <form class="nl-form" id="nlForm" novalidate>
+        <div class="nl-wrap">
+          <input class="nl-input" id="nlEmail" type="email" placeholder="Ваш email" autocomplete="email">
+          <div class="f-err" id="nlErr"></div>
+        </div>
+        <button class="nl-submit" type="submit" id="nlBtn">Подписаться</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="f-logo"><span class="ak">Актив</span><span class="tu">Тур</span></div>
+        <p class="f-desc">Спортивные путешествия для тех, кто живёт в движении.</p>
+      </div>
+      <div>
+        <p class="f-col-title">Навигация</p>
+        <ul class="f-list"><li>Направления</li><li>Как это работает</li><li>Туры</li><li>Отзывы</li><li>FAQ</li><li>О нас</li></ul>
+      </div>
+      <div>
+        <p class="f-col-title">Виды спорта</p>
+        <ul class="f-list"><li>Горные лыжи и сноуборд</li><li>Серфинг и SUP</li><li>Трейлраннинг</li><li>Велоспорт</li><li>Дайвинг</li><li>Скалолазание</li></ul>
+      </div>
+      <div>
+        <p class="f-col-title">Контакты</p>
+        <div class="f-contact-item"><svg viewBox="0 0 16 16" fill="none" stroke="#6bc6ec" stroke-width="1.33" stroke-linecap="round"><path d="M8.4 14.53C9.64 13.46 13.33 10 13.33 6.67a5.33 5.33 0 1 0-10.67 0C2.67 10 6.36 13.46 7.6 14.53a.67.67 0 0 0 .8 0Z"/><circle cx="8" cy="6.67" r="2"/></svg><span>Неаполь, Италия<br>Москва, Россия</span></div>
+        <div class="f-contact-item"><svg viewBox="0 0 16 16" fill="none" stroke="#6bc6ec" stroke-width="1.33" stroke-linecap="round"><rect x="1.33" y="2.67" width="13.33" height="10.67" rx="1.33"/><path d="M14.67 4.67L8.68 8.47a1.33 1.33 0 0 1-1.37 0L1.33 4.67"/></svg><span>info@aktivtur.ru</span></div>
+        <div class="f-contact-item"><svg viewBox="0 0 16 16" fill="none" stroke="#6bc6ec" stroke-width="1.33" stroke-linecap="round"><path d="M14.67 11.28v2a.67.67 0 0 1-.73.67 10.67 10.67 0 0 1-4.65-1.65A10.53 10.53 0 0 1 6.07 9.1a10.67 10.67 0 0 1-1.65-4.67.67.67 0 0 1 .67-.73h2a.67.67 0 0 1 .67.58c.04.4.12.8.23 1.18a.67.67 0 0 1-.15.71L7 6.6a10.67 10.67 0 0 0 3.27 3.27l.53-.54a.67.67 0 0 1 .71-.15c.38.11.78.19 1.18.23a.67.67 0 0 1 .58.67Z"/></svg><span>+7 (495) 123-45-67</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="f-copy">© 2026 АктивТур. Все права защищены.</p>
+      <div class="f-links"><a href="#">Политика конфиденциальности</a><a href="#">Условия использования</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- BOOKING MODAL -->
+<div class="modal-ov hidden" id="bookingModal">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div><div class="modal-title">Забронировать тур</div><div class="modal-tour" id="mTourName"></div></div>
+      <button class="m-close" id="mClose"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.67" stroke-linecap="round"><path d="M15 5L5 15M5 5L15 15"/></svg></button>
+    </div>
+    <form class="m-form" id="bookForm" novalidate>
+      <div class="m-group"><label class="m-label" for="fName">Ваше имя *</label><input class="m-input" id="fName" type="text" placeholder="Иван Иванов"><div class="f-err" id="fNameErr"></div></div>
+      <div class="m-group"><label class="m-label" for="fEmail">Email *</label><input class="m-input" id="fEmail" type="email" placeholder="example@mail.ru"><div class="f-err" id="fEmailErr"></div></div>
+      <div class="m-group"><label class="m-label" for="fPhone">Телефон *</label><input class="m-input" id="fPhone" type="tel" placeholder="+7 (999) 123-45-67"><div class="f-err" id="fPhoneErr"></div></div>
+      <div class="m-group">
+        <label class="m-label" for="fParts">Количество участников</label>
+        <select class="m-select" id="fParts">
+          <option value="1">1 человек</option><option value="2">2 человека</option><option value="3">3 человека</option><option value="4">4 человека</option><option value="5">5 человек</option><option value="6">6 человек</option><option value="7">7 человек</option><option value="8">8 человек</option><option value="9">9 человек</option><option value="10">10 человек</option>
+        </select>
+      </div>
+      <div class="m-group"><label class="m-label" for="fComment">Комментарий</label><textarea class="m-textarea" id="fComment" rows="3" placeholder="Дополнительные пожелания..."></textarea></div>
+      <p class="m-note">* Обязательные поля. Мы не передаём ваши данные третьим лицам.</p>
+      <button class="m-submit" type="submit" id="mSubmit">Отправить заявку</button>
+    </form>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast">
+  <div class="toast-ico"><svg viewBox="0 0 14 14" fill="none" stroke="#007a55" stroke-width="1.5" stroke-linecap="round"><path d="M2 7l3.5 3.5L12 3"/></svg></div>
+  <span class="toast-msg" id="toastMsg"></span>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
